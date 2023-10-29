@@ -47,10 +47,10 @@ const Dashboard = () => {
         <Typography variant='h4' children={PORTFOLIO} color="white" />
       </RightContainer>
       <LeftContainer>
-        <Typography variant='body2' onClick={()=>navigate('/home')}> Home</Typography>
-        <Typography variant='body2' onClick={()=>navigate('/about')}> About Me</Typography>
-        <Typography variant='body2' onClick={()=>navigate('/project')}> Projects</Typography>
-        <Typography variant='body2' onClick={()=>navigate('/contact')}> Contact Form</Typography>
+        <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/home')}> Home</Typography>
+        <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/about')}> About Me</Typography>
+        <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/project')}> Projects</Typography>
+        <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/contact')}> Contact Form</Typography>
         <Typography variant='body2'> Download Resume</Typography>
       </LeftContainer>
       
