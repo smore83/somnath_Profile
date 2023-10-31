@@ -2,11 +2,6 @@ import React from 'react';
 import { Grid, styled, Box, Paper } from "@mui/material";
 
 import { PORTFOLIO } from '../../../utils/constant';
-import HomeIcon from '@mui/icons-material/Home';
-import InfoIcon from '@mui/icons-material/Info';
-import WorkIcon from '@mui/icons-material/Work';
-import MailIcon from '@mui/icons-material/Mail';
-import GetAppIcon from '@mui/icons-material/GetApp';
 import Typography from '../../atoms/typograpy';
 import { useNavigate } from "react-router-dom";
 const OuterContainer = styled(Paper)({

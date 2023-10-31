@@ -16,7 +16,7 @@ function App() {
           element={
             <Layout>
               {" "}
-              <Home />{" "}
+              <Dashboard />{" "}
             </Layout>
           }
         />
