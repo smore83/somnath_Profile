@@ -42,11 +42,11 @@ const Dashboard = () => {
         <Typography variant='h4' children={PORTFOLIO} color="white" />
       </RightContainer>
       <LeftContainer>
-        <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/home')}> Home</Typography>
+        <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/')}> Home</Typography>
         <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/about')}> About Me</Typography>
         <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/project')}> Projects</Typography>
         <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/contact')}> Contact Form</Typography>
-        <Typography variant='body2'> Download Resume</Typography>
+        <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/resume')}> Download Resume</Typography>
       </LeftContainer>
       
     </OuterContainer>

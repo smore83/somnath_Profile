@@ -6,6 +6,8 @@ import AboutMe from "./components/pages/AboutMe";
 import ContactForm from "./components/pages/ContactForm";
 import Projects from "./components/pages/Projects";
 import Layout from "./components/pages/Layout";
+import BasicTable from "./components/pages/Table";
+import Resume from "./components/pages/Resume";
 
 function App() {
   return (
@@ -16,7 +18,7 @@ function App() {
           element={
             <Layout>
               {" "}
-              <Dashboard />{" "}
+              <Home />{" "}
             </Layout>
           }
         />
@@ -44,6 +46,15 @@ function App() {
             <Layout>
               {" "}
               <ContactForm />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="/somnath_Profile/resume"
+          element={
+            <Layout>
+              {" "}
+              <Resume />{" "}
             </Layout>
           }
         />
