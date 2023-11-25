@@ -10,12 +10,22 @@ const CusomBox=styled(Box)({
      width:'800px',
      border:'2px solid grey',
      marginLeft:'500px',
-     marginTop:'100px',
      gap:'20px',
-    padding:'10px'
+    padding:'10px',
+    boxShadow: '30px 30px 20px rgba(0, 0, 0, 0.3)',
+    transform:"translate(10%,40%)",
+    background:'radial-gradient(red, yellow, green)'
+
+})
+const AboutMeBox=styled(Box)({
+
+  height:'89vh',
+  width:'100%',
+  // background:'linear-gradient(violet,black, pink)'
 })
 const AboutMe = () => {
   return (
+    <AboutMeBox>
     <CusomBox>
 
       <Typography variant='h4'> 🙋‍♂️ About Me</Typography>
@@ -33,6 +43,7 @@ const AboutMe = () => {
         This website/blog is my platform to share my thoughts, ideas, and experiences with you. I hope you find my content interesting and valuable. Feel free to connect with me on somnath_more and let's embark on this journey together!
         </Typography>
     </CusomBox>
+    </AboutMeBox>
   );
 };
 

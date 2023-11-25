@@ -1,12 +1,10 @@
 import styled from "@emotion/styled";
 import { Box, Grid } from "@mui/material";
 import React, { useState } from "react";
-
 import Button from "../../atoms/button";
 import TextField from "../../atoms/textfield";
 import Typography from "../../atoms/typograpy";
 import { Contact_Data } from "../../../services";
-import { log } from "console";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const FormBox = styled(Box)({
