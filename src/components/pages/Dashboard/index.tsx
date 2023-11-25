@@ -4,13 +4,14 @@ import { Grid, styled, Box, Paper } from "@mui/material";
 import { PORTFOLIO } from '../../../utils/constant';
 import Typography from '../../atoms/typograpy';
 import { useNavigate } from "react-router-dom";
+import { Tooltip } from 'react-tooltip';
 const OuterContainer = styled(Paper)({
   display: 'flex',
   alignItems: 'center',
   padding: '10px',
   height: '70px',
   width: '100%',
-  background: 'linear-gradient(to right, #ff758c, #ff7eb3)',
+  background: 'linear-gradient(45deg, #F8D800, #43CBFF)',
 });
 
 const LeftContainer = styled(Box)({
@@ -18,7 +19,8 @@ const LeftContainer = styled(Box)({
   alignItems: 'center',
   justifyContent: 'space-evenly',
   flex: 1,
-  cursor:'pointer'
+  cursor:'pointer',
+
 });
 
 const RightContainer = styled(Box)({
@@ -30,23 +32,21 @@ const RightContainer = styled(Box)({
   flexWrap: 'wrap',
 });
 
-const IconStyle = {
-  marginRight: '5px',
-};
 
 const Dashboard = () => {
   const navigate=useNavigate();
   return (
     <OuterContainer>
+
       <RightContainer>
-        <Typography variant='h4' children={PORTFOLIO} color="white" />
+       <Typography variant='h4' children={PORTFOLIO} />
       </RightContainer>
       <LeftContainer>
-        <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/')}> Home</Typography>
-        <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/about')}> About Me</Typography>
-        <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/project')}> Projects</Typography>
-        <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/contact')}> Contact Form</Typography>
-        <Typography variant='body2' onClick={()=>navigate('/somnath_Profile/resume')}> Download Resume</Typography>
+     <Typography variant="h6" onClick={()=>navigate('/')}>Home</Typography>
+        <Typography variant='h6' onClick={()=>navigate('/about')}>About Me</Typography>
+        <Typography variant='h6' onClick={()=>navigate('/project')}>Projects</Typography>
+        <Typography variant='h6' onClick={()=>navigate('/contact')}>Contact Me</Typography>
+        <Typography variant='h6' onClick={()=>navigate('/resume')}>Resume</Typography>
       </LeftContainer>
       
     </OuterContainer>

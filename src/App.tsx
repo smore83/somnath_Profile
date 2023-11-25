@@ -14,7 +14,7 @@ function App() {
     <>
       <Routes>
         <Route
-          path="/somnath_Profile/"
+          path="/"
           element={
             <Layout>
               {" "}
@@ -23,7 +23,7 @@ function App() {
           }
         />
         <Route
-          path="/somnath_Profile/about"
+          path="/about"
           element={
             <Layout>
               {" "}
@@ -32,7 +32,7 @@ function App() {
           }
         />
         <Route
-          path="/somnath_Profile/project"
+          path="/project"
           element={
             <Layout>
               {" "}
@@ -41,7 +41,7 @@ function App() {
           }
         />
         <Route
-          path="/somnath_Profile/contact"
+          path="/contact"
           element={
             <Layout>
               {" "}
@@ -50,7 +50,7 @@ function App() {
           }
         />
         <Route
-          path="/somnath_Profile/resume"
+          path="/resume"
           element={
             <Layout>
               {" "}
