@@ -1,20 +1,17 @@
 import React from "react";
-import Dashboard from "./components/pages/Dashboard";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/pages/Home";
 import AboutMe from "./components/pages/AboutMe";
 import ContactForm from "./components/pages/ContactForm";
 import Projects from "./components/pages/Projects";
 import Layout from "./components/pages/Layout";
-import BasicTable from "./components/pages/Table";
 import Resume from "./components/pages/Resume";
 
 function App() {
   return (
-    <>
       <Routes>
         <Route
-          path="/"
+          path="/somnath_Profile/"
           element={
             <Layout>
               {" "}
@@ -23,7 +20,7 @@ function App() {
           }
         />
         <Route
-          path="/about"
+          path="/somnath_Profile/about"
           element={
             <Layout>
               {" "}
@@ -32,7 +29,7 @@ function App() {
           }
         />
         <Route
-          path="/project"
+          path="/somnath_Profile/project"
           element={
             <Layout>
               {" "}
@@ -41,7 +38,7 @@ function App() {
           }
         />
         <Route
-          path="/contact"
+          path="/somnath_Profile/contact"
           element={
             <Layout>
               {" "}
@@ -50,7 +47,7 @@ function App() {
           }
         />
         <Route
-          path="/resume"
+          path="/somnath_Profile/resume"
           element={
             <Layout>
               {" "}
@@ -59,7 +56,6 @@ function App() {
           }
         />
       </Routes>
-    </>
   );
 }
 
