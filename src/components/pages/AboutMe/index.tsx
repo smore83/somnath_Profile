@@ -14,7 +14,7 @@ const CusomBox=styled(Box)({
     padding:'10px',
     boxShadow: '30px 30px 20px rgba(0, 0, 0, 0.3)',
     transform:"translate(10%,40%)",
-    background:'radial-gradient(red, yellow, green)'
+    background:'linear-gradient(red, yellow, green)'
 
 })
 const AboutMeBox=styled(Box)({

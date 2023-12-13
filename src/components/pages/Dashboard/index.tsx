@@ -4,7 +4,7 @@ import { Grid, styled, Box, Paper } from "@mui/material";
 import { PORTFOLIO } from '../../../utils/constant';
 import Typography from '../../atoms/typograpy';
 import { useNavigate } from "react-router-dom";
-import { Tooltip } from 'react-tooltip';
+
 const OuterContainer = styled(Paper)({
   display: 'flex',
   alignItems: 'center',

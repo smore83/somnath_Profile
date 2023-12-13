@@ -12,9 +12,10 @@ const FormBox = styled(Box)({
   flexDirection: "column",
   height: "500px",
   width: "600px",
-  marginLeft: "400px",
+  marginLeft: "600px",
   justifyContent: "center",
   alignItems: "center",
+  boxShadow: '30px 30px 20px rgba(0, 0, 0, 0.3)',
 });
 
 const ElementWithMargin = styled(Grid)({

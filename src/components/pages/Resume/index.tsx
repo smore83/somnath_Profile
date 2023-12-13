@@ -7,7 +7,7 @@ const ResumeBox=styled(Box)({
   display:'flex',
   height:'90vh',
   width:'100%',
-  background:'linear-gradient(pink,green,yellow)'
+  marginTop:'100px'
 })
 const ResumeContainer=styled(Box)({
     display:'flex',

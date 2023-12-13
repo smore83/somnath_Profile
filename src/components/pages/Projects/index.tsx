@@ -62,9 +62,6 @@ const ProjectListContainer = styled(Box)({
   paddingTop: "0.9375rem",
 });
 
-const ProjectContainer = styled(Box)({
-  display: "flex",
-});
 
 const Projects = () => {
   return (
