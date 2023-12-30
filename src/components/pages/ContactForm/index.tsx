@@ -7,6 +7,8 @@ import Typography from "../../atoms/typograpy";
 import { Contact_Data } from "../../../services";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LandingPageTemplate from "../../templates/Layout";
+
 const FormBox = styled(Box)({
   display: "flex",
   flexDirection: "column",
@@ -16,6 +18,17 @@ const FormBox = styled(Box)({
   justifyContent: "center",
   alignItems: "center",
   boxShadow: '30px 30px 20px rgba(0, 0, 0, 0.3)',
+  background:'linear-gradient(120deg, #FF758C, #FF7EB3, #A7C0FD, #6D5BBA)',
+  '@media (max-width: 768px)': {
+    width: 'auto',
+    height:'auto',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+     transform: 'none',
+     boxShadow:'none',
+     paddingBottom:'0.625rem',
+     marginTop:'2px'
+  },
 });
 
 const ElementWithMargin = styled(Grid)({
@@ -116,4 +129,11 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+
+const ContactFormPage = () => {
+  return (
+   <LandingPageTemplate content={<ContactForm/>}/>
+  )
+}
+
+export default ContactFormPage;

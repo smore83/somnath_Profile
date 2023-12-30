@@ -2,30 +2,41 @@ import React from 'react';
 import Typography from '../../atoms/typograpy';
 import { Stack,Box } from '@mui/material';
 import styled from '@emotion/styled';
+import LandingPageTemplate from '../../templates/Layout';
+
 const CusomBox=styled(Box)({
      display:'flex',
      flexDirection:'column',
       justifyContent:'center',
-     height:'400px',
-     width:'800px',
+     height:'25rem',
+     width:'50rem',
      border:'2px solid grey',
      marginLeft:'500px',
      gap:'20px',
     padding:'10px',
     boxShadow: '30px 30px 20px rgba(0, 0, 0, 0.3)',
     transform:"translate(10%,40%)",
-    background:'linear-gradient(red, yellow, green)'
+    background:'linear-gradient(red, yellow, green)',
+    '@media (max-width: 768px)': {
+      width: '90vw',
+      height:'auto',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+       transform: 'none',
+    },
 
 })
 const AboutMeBox=styled(Box)({
 
   height:'89vh',
   width:'100%',
-  // background:'linear-gradient(violet,black, pink)'
+  background:'linear-gradient(120deg, #FF758C, #FF7EB3, #A7C0FD, #6D5BBA)'
 })
 const AboutMe = () => {
   return (
+   
     <AboutMeBox>
+    
     <CusomBox>
 
       <Typography variant='h4'> 🙋‍♂️ About Me</Typography>
@@ -47,4 +58,11 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+
+const AboutPage = () => {
+  return (
+    <LandingPageTemplate content={<AboutMe/>}/>
+  )
+}
+
+export default AboutPage

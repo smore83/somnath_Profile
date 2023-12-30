@@ -7,8 +7,12 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
-import React from "react";
-interface MyProject {
+import React, { useState } from "react";
+import LandingPageTemplate from "../../templates/Layout";
+import TextField from "../../atoms/textfield";
+import { SEARCH_TEXT } from "../../../utils/constant";
+import { myProjects } from "../../../utils/api";
+export interface MyProject {
   id: number;
   title: string;
   description: string;
@@ -16,56 +20,22 @@ interface MyProject {
   link: string;
   published: string;
 }
-const myProjects: MyProject[] = [
-  {
-    id: 1,
-    title: "Html To Do List",
-    description:
-      "This is the description of Project 1. It is a web application built using React and Node.js.",
-    tools: "React, Node.js, Express, MongoDB",
-    link: "https://example.com/project1",
-    published: "23-09-2021",
-  },
-  {
-    id: 2,
-    title: "JS To Do List",
-    description:
-      "Project 2 is a mobile app for iOS and Android. It was developed using React Native.",
-    tools: "React Native, JavaScript, Firebase",
-    link: "https://example.com/project2",
-    published: "23-09-2023",
-  },
-  {
-    id: 3,
-    title: "Html To Do List",
-    description:
-      "This is the description of Project 1. It is a web application built using React and Node.js.",
-    tools: "React, Node.js, Express, MongoDB",
-    link: "https://example.com/project1",
-    published: "23-09-2022",
-  },
-  {
-    id: 4,
-    title: "JS To Do List",
-    description:
-      "Project 2 is a mobile app for iOS and Android. It was developed using React Native.",
-    tools: "React Native, JavaScript, Firebase",
-    link: "https://example.com/project2",
-    published: "23-09-2023",
-  },
-];
+
 const ProjectListContainer = styled(Box)({
   display: "flex",
   flexDirection: "column",
   height: "50rem",
   width: "100%",
   paddingTop: "0.9375rem",
+  background:'linear-gradient(120deg, #FF758C, #FF7EB3, #A7C0FD, #6D5BBA)'
 });
 
 
 const Projects = () => {
+  const [searchData,setSearchData]=useState("");
   return (
     <ProjectListContainer>
+      <TextField placeholder={SEARCH_TEXT} onChange={(e)=>setSearchData(e.target.value)}/>
       <Table>
         <TableHead>
           <TableRow>
@@ -77,7 +47,7 @@ const Projects = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {myProjects.map((data) => (
+          {myProjects.filter((project)=>project.title.toLowerCase().includes(searchData) || project.tools.toLowerCase().includes(searchData)).map((data) => (
             <TableRow key={data.id}>
               <TableCell>{data.title}</TableCell>
               <TableCell>{data.description}</TableCell>
@@ -92,4 +62,11 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+
+const ProjectPage = () => {
+  return (
+   <LandingPageTemplate content={<Projects/>}/>
+  )
+}
+
+export default ProjectPage
