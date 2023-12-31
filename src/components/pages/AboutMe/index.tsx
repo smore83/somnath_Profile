@@ -23,6 +23,9 @@ const CusomBox=styled(Box)({
       marginLeft: 'auto',
       marginRight: 'auto',
        transform: 'none',
+       padding:'none',
+       boxShadow:'none',
+       gap:'none'
     },
 
 })

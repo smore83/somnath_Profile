@@ -10,7 +10,7 @@ const OuterContainer = styled(Paper)({
   alignItems: 'center',
   padding: '10px',
   height: '70px',
-  width: '99%',
+  width: '100%',
   background: 'linear-gradient(45deg, #F8D800, #43CBFF)',
   cursor: 'pointer',
   transition: 'box-shadow 0.3s ease-in-out',

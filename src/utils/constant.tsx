@@ -3,3 +3,5 @@ export const DESCRIPTION= "I develop application for customers of all functional
 
 export const NavaData=['/', '/about', '/project', '/contact', '/resume'];
 export const SEARCH_TEXT="Search my projects ,technology";
+export const DOWNLOAD_CV="Download CV";
+export const textToType = "Hello! I'm Somnath More, a passionate Full Stack Developer based in Zemoso Tech, Hyderabad...";

@@ -13,7 +13,7 @@ interface DashBoardTemplateProps {
 const Container = styled(Grid)({
   display: "flex",
   backgroundColor: "#F7F8FA",
-  height: "100vh",
+  height: "99.6vh",
 });
 
 const RightBox = styled(Grid)({
@@ -28,6 +28,7 @@ const NavigationBar = styled(Grid)({});
 
 const HeaderComp = styled(Grid)(() => ({
   border:  "none" ,
+  width:'100%'
 }));
 
 const ScrollableContent = styled(Grid)(

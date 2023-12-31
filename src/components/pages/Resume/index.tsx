@@ -26,7 +26,7 @@ const ResumeContainer = styled(Box)({
   '@media (max-width: 768px)': {
     width: 'auto',
     height:'auto',
-    marginLeft: '30px',
+    marginLeft: 'auto',
     marginRight: 'auto',
      transform: 'none',
      boxShadow:'none',

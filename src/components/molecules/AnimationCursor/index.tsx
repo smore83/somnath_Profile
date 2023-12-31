@@ -4,8 +4,8 @@ import AnimatedCursor from 'react-animated-cursor'
 const AnimationCursor = () => {
   return (
     <AnimatedCursor
-    innerSize={12} // Adjust the inner cursor size
-    outerSize={28} // Adjust the outer cursor size
+    innerSize={14} // Adjust the inner cursor size
+    outerSize={48} // Adjust the outer cursor size
     color='143,0,255' 
     outerAlpha={0.3} 
     innerScale={0.7} 

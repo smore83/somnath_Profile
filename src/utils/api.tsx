@@ -21,20 +21,57 @@ export const myProjects: MyProject[] = [
     },
     {
       id: 3,
-      title: "Html To Do List",
+      title: "Crop Prediction System",
       description:
         "This is the description of Project 1. It is a web application built using React and Node.js.",
-      tools: "React, Node.js, Express, MongoDB",
+      tools: "Machine Learning , Flask ,Python",
       link: "https://example.com/project1",
       published: "23-09-2022",
     },
     {
-      id: 4,
-      title: "JS To Do List",
-      description:
-        "Project 2 is a mobile app for iOS and Android. It was developed using React Native.",
-      tools: "React Native, JavaScript, Firebase",
-      link: "https://example.com/project2",
-      published: "23-09-2023",
-    },
+        id: 4,
+        title: "Html To Do List",
+        description:
+          "This is the description of Project 1. It is a web application built using React and Node.js.",
+        tools: "React, Node.js, Express, MongoDB",
+        link: "https://example.com/project1",
+        published: "23-09-2021",
+      },
+      {
+        id: 5,
+        title: "JS To Do List",
+        description:
+          "Project 2 is a mobile app for iOS and Android. It was developed using React Native.",
+        tools: "React Native, JavaScript, Firebase",
+        link: "https://example.com/project2",
+        published: "23-09-2023",
+      },
+      {
+        id: 6,
+        title: "Crop Prediction System",
+        description:
+          "This is the description of Project 1. It is a web application built using React and Node.js.",
+        tools: "Machine Learning , Flask ,Python",
+        link: "https://example.com/project1",
+        published: "23-09-2022",
+      },
+      {
+        id: 7,
+        title: "Html To Do List",
+        description:
+          "This is the description of Project 1. It is a web application built using React and Node.js.",
+        tools: "React, Node.js, Express, MongoDB",
+        link: "https://example.com/project1",
+        published: "23-09-2021",
+      },
+      {
+        id: 8,
+        title: "JS To Do List",
+        description:
+          "Project 2 is a mobile app for iOS and Android. It was developed using React Native.",
+        tools: "React Native, JavaScript, Firebase",
+        link: "https://example.com/project2",
+        published: "23-09-2023",
+      }
+
   ];
