@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Typography from "../../atoms/typograpy";
 import styled from "@emotion/styled";
 import { Box } from "@mui/material";
@@ -43,6 +43,9 @@ const Resume = () => {
     );
   };
 
+  
+
+  
   return (
     <ResumeBox>
       <ResumeContainer>

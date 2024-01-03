@@ -8,9 +8,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { Face } from '@mui/icons-material';
 import { IconComp } from '../../atoms/Image';
-import LinkedPic from "../../../icons/icons8-linkedin-60.png"
+import LinkedPic from "../../../icons/icons8-linkedin-60.png";
+import GithubPic from "../../../icons/github.svg";
 import MyPhoto from "../../../icons/MyPhoto.png";
-import FacebookPic from "../../../icons/icons8-facebook-48.png"
+import FacebookPic from "../../../icons/facebook.svg";
 import InstagramPic from "../../../icons/icons8-instagram-48.png"
 import TwitterPic from "../../../icons/icons8-twitter-48.png"
 import { DESCRIPTION, DOWNLOAD_CV } from '../../../utils/constant';
@@ -103,6 +104,7 @@ const Home = () => {
 </Typography> 
       <Button sx={{display:'flex',width:'100%', background:'black',marginTop:'1.25rem'}} variant="contained">{DOWNLOAD_CV}</Button>
       <Box sx={{display:'flex' ,justifyContent:'space-evenly', gap:'1.25rem',marginTop:'1.25rem'}}>
+      <IconComp src={GithubPic} height='30px' width='30px' alt='my image'/>    
       <IconComp src={LinkedPic} height='30px' width='30px' alt='my image'/>
       <IconComp src={FacebookPic} height='30px' width='30px' alt='my image'/>
       <IconComp src={InstagramPic} height='30px' width='30px' alt='my image'/>
